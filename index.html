@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <iframe class="bar-navegacion" src="encabezado.html"></iframe>
+        <div class="img-centro-todoAncho">
+            <img src="Imagenes/AnuncioIA1.jpg" alt="Anuncio"/>
+        </div>
+        <div class="container-franja-media">
+            <div class="container-franja-media-izquierda">
+                <h1>Equias - Servicio Tecnico Especializado</h1>
+                <h2>Llamanos Al Telefono Fijo o Whatsapp</h2>                
+                <P>Lunes a Viernes de 8am a 6pm</P>
+                <P>Sabados 8am a 2pm</P>
+            </div>
+            <div class="container-franja-media-derecha">
+                <a href="#"><i class="fa-solid fa-phone"></i> +57 6320005</a>
+                <a href="https://wa.me/3124665019?text=Hola señores EQUIAS, solicito un servicio para mi electrodomestico" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> 312 466 5019</a>
+            </div>
+        </div>
+        <div class="franja-media-texto">
+            <h2>Servicio tecnico especializado en electrodomesticos y linea blanca</h2>
+            <p>
+                Reparaciones confiables para tus electrodomésticos. En EQUIAS, tu tranquilidad es nuestra prioridad.
+                Diagnóstico preciso y reparación experta. somos, la solución que estas buscando.
+            </p>
+        </div>
+        <div class="anuncio-todo-ancho">
+            <img src="Imagenes/Anuncio4.png" alt="Anuncio EQUIAS"/>
+        </div>
+        <div class="anuncio-todo-ancho-pequeño">
+            <img src="Imagenes/Anuncio5.png" alt="Anuncio EQUIAS"/>
+        </div>
+        <div class="container-mapa">
+            <h1>¿Como llegar?</h1>
+            <p>Estamos ubicados al norte de Bogota, frente a la estacion la granja. Calle 80 N° 76D-26</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4120849171063!2d-74.09640742546848!3d4.698250541679748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b30b8166b61%3A0x9aabcdcb4ae84ca7!2sEquias%20Equipos%20Y%20Asesorias!5e0!3m2!1ses!2sco!4v1736887027645!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="redes-sociales-fijas">
+            <a href="FACEBOOK" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="YOU TUBE" target="_blank" class="youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/3124665019?text=Hola señores EQUIAS, solicito un servicio para mi electrodomestico" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+       
+        <div class="carousel-container">
+             <h3>Reparamos todas las marcas</h3>
+            <div class="carousel-slide" id="carousel">
+                <img class="carousel-image" src="Imagenes/logo-lg.png" alt="Imagen 1">
+                <img class="carousel-image" src="Imagenes/logo-samsung.png" alt="Imagen 2">
+                <img class="carousel-image" src="Imagenes/logo-centrales.png" alt="Imagen 3">
+                <img class="carousel-image" src="Imagenes/whirpool-logo.jpg" alt="Imagen 4">
+                <img class="carousel-image" src="Imagenes/Electrolux-Logo.jpg" alt="Imagen 5">
+                <img class="carousel-image" src="Imagenes/General-Electric-logo.png" alt="Imagen 6">
+                <img class="carousel-image" src="Imagenes/daewoo-logo.jpg" alt="Imagen 7">
+                <img class="carousel-image" src="Imagenes/logo-mabe.png" alt="Imagen 8">
+                <img class="carousel-image" src="Imagenes/logo-icasa.jpg" alt="Imagen 9">
+                <img class="carousel-image" src="Imagenes/logo-abba.png" alt="Imagen 10">
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+            <iframe class="i-foother" src="foother.html"></iframe>
+
+        <script>
+            const carousel = document.getElementById('carousel');
+            const images = document.querySelectorAll('.carousel-image');
+            let currentIndex = 0;
+            const numImagesVisible = 3;
+            let intervalId; // Variable para almacenar el ID del intervalo
+
+            function moveSlide(direction) {
+                currentIndex += direction;
+
+                if (currentIndex < 0) {
+                    currentIndex = images.length - numImagesVisible;
+                } else if (currentIndex > images.length - numImagesVisible) {
+                    currentIndex = 0;
+                }
+
+                carousel.style.transform = `translateX(${-currentIndex * (images[0].offsetWidth + 20)}px)`;
+            }
+
+            function startAutoplay() {
+                intervalId = setInterval(() => {
+                    moveSlide(1); // Mueve a la derecha
+                }, 2000); // Intervalo de 2 segundos
+            }
+
+            function stopAutoplay() {
+                clearInterval(intervalId); // Detiene el intervalo
+            }
+
+            // Iniciar autoplay al cargar la página
+            startAutoplay();
+
+            // Detener el autoplay al pasar el mouse por encima del carrusel y reanudarlo al quitarlo.
+            const carouselContainer = document.querySelector(".carousel-container");
+            carouselContainer.addEventListener("mouseenter", stopAutoplay);
+            carouselContainer.addEventListener("mouseleave", startAutoplay);
+
+            // Para que se vea el primer grupo de imágenes al cargar la página
+            moveSlide(0);
+
+        </script>
+
+    </body>
+</html>
